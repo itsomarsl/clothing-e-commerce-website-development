@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --radius-sm: calc(var(--radius) * .6);
+  --radius-md: calc(var(--radius) * .8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.95 0.01 85);
+  --foreground: oklch(0.18 0.01 85);
+  --card: oklch(0.97 0.008 85);
+  --card-foreground: oklch(0.18 0.01 85);
+  --primary: oklch(0.24 0.03 165);
+  --primary-foreground: oklch(0.97 0.008 85);
+  --muted: oklch(0.9 0.015 85);
+  --muted-foreground: oklch(0.48 0.015 85);
+  --accent: oklch(0.93 0.22 125);
+  --accent-foreground: oklch(0.18 0.01 85);
+  --border: oklch(0.18 0.01 85 / 18%);
+  --input: oklch(0.18 0.01 85 / 20%);
+  --ring: oklch(0.45 0.08 165);
+  --radius: 0.2rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+::selection { background: #b5ff4a; color: #181817; }
