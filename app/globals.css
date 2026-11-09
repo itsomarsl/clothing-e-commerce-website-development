@@ -26,19 +26,19 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(0.95 0.01 85);
-  --foreground: oklch(0.18 0.01 85);
-  --card: oklch(0.97 0.008 85);
-  --card-foreground: oklch(0.18 0.01 85);
-  --primary: oklch(0.24 0.03 165);
-  --primary-foreground: oklch(0.97 0.008 85);
-  --muted: oklch(0.9 0.015 85);
-  --muted-foreground: oklch(0.48 0.015 85);
-  --accent: oklch(0.93 0.22 125);
-  --accent-foreground: oklch(0.18 0.01 85);
-  --border: oklch(0.18 0.01 85 / 18%);
-  --input: oklch(0.18 0.01 85 / 20%);
-  --ring: oklch(0.45 0.08 165);
+  --background: oklch(0.955 0.018 82);
+  --foreground: oklch(0.24 0.025 55);
+  --card: oklch(0.985 0.012 82);
+  --card-foreground: oklch(0.24 0.025 55);
+  --primary: oklch(0.32 0.045 165);
+  --primary-foreground: oklch(0.985 0.012 82);
+  --muted: oklch(0.9 0.025 78);
+  --muted-foreground: oklch(0.52 0.035 58);
+  --accent: oklch(0.72 0.16 58);
+  --accent-foreground: oklch(0.24 0.025 55);
+  --border: oklch(0.24 0.025 55 / 16%);
+  --input: oklch(0.24 0.025 55 / 20%);
+  --ring: oklch(0.55 0.11 25);
   --radius: 0.2rem;
 }
 
@@ -47,9 +47,10 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
 
 body { font-family: 'DM Sans', Arial, Helvetica, sans-serif; }
 h1, h2, h3 { font-family: 'Syne', 'DM Sans', Arial, Helvetica, sans-serif; }
 
-::selection { background: #e4b84a; color: #181817; }
+::selection { background: #efbd55; color: #241f1a; }
+
+:focus-visible { outline: 2px solid #bd553a; outline-offset: 3px; }

@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'HMLY — Egyptian winter essentials',
-  description: 'Premium hoodies, jackets, and everyday essentials designed in Egypt.',
+  title: 'Zizi Store — Egyptian streetwear',
+  description: 'Premium hoodies, jackets, and everyday streetwear made for Cairo.',
   generator: 'v0.app',
   icons: {
     icon: [
